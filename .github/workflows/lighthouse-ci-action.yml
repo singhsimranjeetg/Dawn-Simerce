@@ -1,11 +1,8 @@
 name: Shopify Lighthouse CI
 on: push
   jobs:
-      name: Lighthouse
-      runs-on: ubuntu-latest
-      steps:
-      - uses: actions/checkout@v2
-      - name: Lighthouse
+    lhci:
+        name: Lighthouse
         uses: shopify/lighthouse-ci-action@1.0
         with:
           app_id: ${{ secrets.SHOP_APP_ID }}
