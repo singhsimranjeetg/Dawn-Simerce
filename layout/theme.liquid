@@ -110,10 +110,9 @@
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
-    <h1>hi</h1>
+   
     {% section 'announcement-bar' %}
     {% section 'header' %}
-
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
@@ -123,7 +122,6 @@
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
     </ul>
-
     <script>
       window.routes = {
         cart_add_url: '{{ routes.cart_add_url }}',
