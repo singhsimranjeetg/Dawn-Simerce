@@ -30,6 +30,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
+            "picker_type": "button"
           }
         },
         "quantity_selector": {
@@ -40,6 +41,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
+            "show_dynamic_checkout": true
           }
         },
         "description": {
@@ -50,6 +52,32 @@
         "share": {
           "type": "share",
           "settings": {
+          }
+        },
+        "f7f2b0c8-f60f-4320-b75f-70b8e1d8fb8c": {
+          "type": "shopify:\/\/apps\/reviews-app\/blocks\/average-rating\/c0aa9957-f7d7-4cff-a0b9-e0304d791229",
+          "settings": {
+            "stars_fill_color": "#000000",
+            "star_size": 24,
+            "padding_x": 0,
+            "padding_y": 0,
+            "show_heading": false,
+            "heading": "Average Score",
+            "product": "{{product}}"
+          }
+        },
+        "d1f3ba42-3629-44fb-ac08-ef268a431e6b": {
+          "type": "shopify:\/\/apps\/reviews-app\/blocks\/product-reviews\/c0aa9957-f7d7-4cff-a0b9-e0304d791229",
+          "settings": {
+            "stars_fill_color": "#000000",
+            "star_size": 24,
+            "padding_x": 50,
+            "padding_y": 0,
+            "heading": "Customer Reviews",
+            "no_reviews_action_text": "Be the first to review this product.",
+            "existing_reviews_action_text": "Write Review",
+            "allow_unverified_reviews": false,
+            "product": "{{product}}"
           }
         }
       },
@@ -62,14 +90,24 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "f7f2b0c8-f60f-4320-b75f-70b8e1d8fb8c",
+        "d1f3ba42-3629-44fb-ac08-ef268a431e6b"
       ],
       "settings": {
+        "enable_sticky_info": true,
+        "enable_video_looping": false
       }
     },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false
       }
     }
   },
