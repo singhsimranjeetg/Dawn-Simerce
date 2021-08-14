@@ -137,7 +137,7 @@
             "heading": "Customer Reviews",
             "no_reviews_action_text": "Be the first to review this product.",
             "existing_reviews_action_text": "Write Review",
-            "allow_unverified_reviews": false,
+            "allow_unverified_reviews": true,
             "product": "{{product}}"
           }
         }
